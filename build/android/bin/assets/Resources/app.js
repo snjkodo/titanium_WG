@@ -81,7 +81,7 @@ var value = new Date();
 
 var picker = Ti.UI.createPicker({
 	type:Ti.UI.PICKER_TYPE_DATE,
-	top:30,
+	top:'4%',
 	minDate:minDate,
 	maxDate:maxDate,
 	value:value
@@ -94,16 +94,16 @@ var kaigiLabel = Titanium.UI.createLabel({
 	color:'#fff',
 	text:'会議室',
 	font:{fontSize:25,fontFamily:'Helvetica Neue'},
-	top:250,
-	left:30,
+	top:'35%',
+	left:'5%',
 	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_NONE
 });
 win3.add(kaigiLabel);
 
 //会議室選択
 var kaigiPicker = Ti.UI.createPicker({
-	top:250,
-	left:'30%'
+	top:'36%',
+	left:'32%'
 });
 
 var data = [];
@@ -120,8 +120,8 @@ var kaishiLabel = Titanium.UI.createLabel({
 	color:'#fff',
 	text:'開始時間',
 	font:{fontSize:25,fontFamily:'Helvetica Neue'},
-	top:320,
-	left:30,
+	top:'46%',
+	left:'5%',
 	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_NONE
 });
 win3.add(kaishiLabel);
@@ -133,8 +133,8 @@ var kaishiPicker = Ti.UI.createPicker({
 	type:Ti.UI.PICKER_TYPE_TIME,
 	value:kaishiTime,
 	minuteInterval: 15,
-	top:370,
-	left:30
+	top:'53%',
+	left:'5%'
 });
 win3.add(kaishiPicker);
 
@@ -143,8 +143,8 @@ var shuryoLabel = Titanium.UI.createLabel({
 	color:'#fff',
 	text:'終了時間',
 	font:{fontSize:25,fontFamily:'Helvetica Neue'},
-	top:320,
-	right:30,
+	top:'46%',
+	right:'5%',
 	borderStyle:Titanium.UI.INPUT_BORDERSTYLE_NONE
 });
 win3.add(shuryoLabel);
@@ -155,8 +155,8 @@ var shuryoPicker = Ti.UI.createPicker({
 	useSpinner:true,
 	type:Ti.UI.PICKER_TYPE_TIME,
 	value:shuryoTime,
-	top:370,
-	right:30,
+	top:'53%',
+	right:'5%',
 	minuteInterval:15
 });
 win3.add(shuryoPicker);
@@ -166,8 +166,8 @@ var b1 = Titanium.UI.createButton({
 	title:'登録',
 	url:'app.js',
 	textAlign:'center',
-	width:350,
-	top:580
+	width:'70%',
+	top:'80%'
 });
 
 // 登録ボタン押下時の動作設定
@@ -182,7 +182,6 @@ move.open();
 });
 
 win3.add(b1);
-
 //
 //  add tabs
 //
